@@ -1,12 +1,16 @@
 package com.example.demo.fleet.api.models.entities;
 
 import com.example.demo.fleet.api.models.enums.StarshipType;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Data;
 import lombok.Builder;
 import jakarta.persistence.*;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Starship {
     @Id
@@ -15,6 +19,9 @@ public class Starship {
 
     @Column(unique = true)
     private String name;
+
+    @Column
+    private String model;
 
     @Enumerated(EnumType.STRING)
     private StarshipType category;

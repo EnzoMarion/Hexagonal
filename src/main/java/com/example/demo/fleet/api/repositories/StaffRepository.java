@@ -1,4 +1,4 @@
-package com.example.demo.fleet.api.models.repositories;
+package com.example.demo.fleet.api.repositories;
 
 import com.example.demo.fleet.api.models.entities.Staff;
 import org.springframework.data.repository.CrudRepository;

@@ -1,4 +1,4 @@
-package com.example.demo.fleet.api.utils;
+package com.example.demo.fleet.utils;
 
 public class Parsing {
 

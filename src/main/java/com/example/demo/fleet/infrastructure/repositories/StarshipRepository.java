@@ -7,7 +7,4 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface StarshipRepository extends JpaRepository<Starship, Long>, StarshipPort {
-    @Override
-    List<Starship> findAll();
-}
+public interface StarshipRepository extends JpaRepository<Starship, Long>, StarshipPort {}
